@@ -35,3 +35,28 @@ def displayColors():
 
 main()
 """
+colors = []
+
+def main():
+    letter = requestLetter()
+    fillListWithColors(letter) 
+    displayColors()
+
+def requestLetter():
+    letter = input("Enter the first letter: ")
+    return letter.upper()
+
+def fillListWithColors(letter):
+        colors
+        infile = open("Colors.txt", 'r')
+        for color in infile:
+            if color.startswith(letter):
+                colors.append(color.rstrip())
+        infile.close()
+
+def  displayColors():
+    for color in colors:
+        print(color)
+
+main()
+
