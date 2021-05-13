@@ -9,4 +9,3 @@ It will then display all colors that start with that letter.
 
 """
 
-
